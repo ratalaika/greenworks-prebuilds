@@ -47,7 +47,7 @@ const getUnique = (versions: MbaVersion[], key: keyof MbaVersion): MbaVersion[] 
   .map((e) => versions[e])
 
 interface Args {
-  os: 'macos-latest' | 'ubuntu-latest' | 'windows-latest';
+  os: 'macos-latest' | 'ubuntu-20.04' | 'windows-latest';
   runtime: 'nw.js' | 'electron' | 'node';
   arch: 'ia32' | 'x64';
   python: string;
@@ -60,7 +60,7 @@ const argv = process.argv.slice(2)
 const args = mri(argv)
 
 const association = {
-  'ubuntu-latest': 'linux',
+  'ubuntu-20.04': 'linux',
   'windows-latest': 'win32',
   'macos-latest': 'darwin',
 }
@@ -85,7 +85,7 @@ function getBinaryName(_arch: 'ia32' | 'x64'): string {
     case 'macos-latest':
       name += 'osx'
       break
-    case 'ubuntu-latest':
+    case 'ubuntu-20.04':
       name += 'linux'
       break
     default:

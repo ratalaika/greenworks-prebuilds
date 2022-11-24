@@ -9,7 +9,7 @@ const Archs = ['ia32', 'x64']
 
 const Runtimes = ['nw.js', 'electron', 'node']
 
-const OSs = ['macos-latest', 'ubuntu-latest', 'windows-latest']
+const OSs = ['macos-latest', 'ubuntu-20.04', 'windows-latest']
 
 const run = async (/* release: Release */): Promise<void> => {
   const json: any = {}
