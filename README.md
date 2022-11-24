@@ -18,3 +18,9 @@ Most common versions/abi are built.
 | Abi | > 70 |
 
 
+## Node ABI versions
+https://nodejs.org/en/download/releases/
+
+## NW.JS Download
+https://nwjs.io/downloads/
+
